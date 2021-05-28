@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="../cv-Claudiu/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -18,17 +22,33 @@
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"
     ></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../cv-Claudiu/bootstrap/js/bootstrap.min.js"></script>
+    <title>Claudiu Ursu Curriculum Vitae</title>
   </head>
   <body>
-    <div class="header"></div>
-    <div class="container">
-      <div class="sidebar">Ceva text</div>
-      <div class="content">
-        <div class="content_title">Profile</div>
-        <div class="paragraph">Acesta este un paragraf</div>
-        <div class="paragraph">Acesta este un paragraf</div>
-        <div class="paragraph">Acesta este un paragraf</div>
+    <div class="header">
+      <div class="name">Claudiu Ursu</div>
+      <div class="function">Junior Web Developer</div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 col_colored d-flex justify-content-center">
+          <div class="profile_picture">
+            <img src="./poza_profil.jpg" alt="cv_profile_picture" />
+          </div>
+          <div class="profile"></div>
+          <div class="contact"></div>
+        </div>
+        <div class="col-6 col_colored d-flex justify-content-center">
+          <div class="experience">
+            <div class="latest_exp"></div>
+            <div class="mid_exp"></div>
+            <div class="oldest_exp"></div>
+          </div>
+          <div class="education"></div>
+          <div class="certifications"></div>
+          <div class="skills"></div>
+        </div>
       </div>
     </div>
   </body>
