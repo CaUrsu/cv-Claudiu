@@ -10,8 +10,7 @@ body {
   width: 100vw;
   background-color: #4c4f4d;
   height: 15vh;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background: linear-gradient(#204229, #437a52);
+  box-shadow: rgba(58, 114, 83, 0.56) 0px 22px 70px 40px;
 }
 .intro {
   font-family: "Lato", sans-serif;
@@ -27,7 +26,7 @@ body {
 }
 .name {
   font-size: 3rem;
-  color: #a6e0b6;
+  color: #d8f0df;
   padding-bottom: 1rem;
   text-shadow: 5px 5px #3b423d;
 }
@@ -35,4 +34,19 @@ body {
   font-size: 1.5rem;
   color: #d8f0df;
   text-shadow: 2px 2px #3b423d;
+}
+.container {
+  background-size: inherit;
+  background: #437a52;
+  animation: fadebackground 6s infinite;
+  height: 85vh;
+  width: 100%;
+}
+@keyframes fadebackground {
+  from {
+    background-color: #437a52;
+  }
+  to {
+    background-color: #204229;
+  }
 }
