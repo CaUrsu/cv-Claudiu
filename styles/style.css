@@ -2,12 +2,13 @@
 font-family: 'Oswald', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap");
 
-* {
-  box-sizing: border-box;
-}
 body {
   margin: 0%;
   display: block;
+  background: #437a52;
+  animation: fadebackground 2s infinite;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 h2 {
   letter-spacing: 4px;
@@ -26,11 +27,11 @@ a:hover {
 
 .header {
   width: 100vw;
-  background: linear-gradient(#204229, #437a52);
+  background-color: #4c4f4d;
   height: 15vh;
   box-shadow: rgba(58, 114, 83, 0.56) 0px 22px 70px 40px;
 }
-.intro { 
+.intro {
   font-family: "Lato", sans-serif;
   font-weight: bolder;
   height: 15vh;
@@ -56,45 +57,50 @@ a:hover {
 }
 .container {
   display: flex;
-  flex-direction: column;
-  background-size: inherit;
+  flex-direction: row;
   background: #437a52;
   font-family: "Oswald", sans-serif;
   animation: fadebackground 2s infinite;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
-  height: 100vh;
-  width: 100vw;
+  height: 85vh;
+  width: 80vw;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.subheader {
-  height: 15vh;
-  width: 100%;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-}
-.profile {
-  width: 60%;
-  height: 100%;
-  color: #d8f0df;
+.left_side {
+  height: 85vh;
+  width: 30%;
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
+}
+.picture,
+.profile,
+.contact {
+  width: 100%;
+  height: 33.333%;
+  color: #d8f0df;
+  padding: 0 10px;
   text-align: center;
   border-top: solid 5px #204229;
-  align-self: center;
 }
-.content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+.picture {
+  background-image: url(../poza_profil.jpg);
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact {
   line-height: 1.8;
   border-bottom: solid 5px #204229;
 }
-
+.right.side {
+  width: 70%;
+}
 
 @keyframes fadebackground {
   from {
