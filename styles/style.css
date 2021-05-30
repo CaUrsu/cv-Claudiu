@@ -13,6 +13,13 @@ body {
 h2 {
   letter-spacing: 4px;
   text-align: center;
+  text-shadow: 4.2px 4.2px 3.4px #3b423d;
+}
+h4,
+h3 {
+  color: #3b423d;
+  font-weight: bolder;
+  letter-spacing: 2px;
 }
 a {
   text-decoration: none;
@@ -69,6 +76,7 @@ a:hover {
   align-items: center;
   margin: 0 auto;
   justify-content: space-around;
+  overflow-y: auto;
 }
 
 .left_side {
@@ -106,23 +114,49 @@ a:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: flex-end;
   align-content: flex-end;
+  overflow-y: auto;
 }
 .experience {
-  background-color: red;
   height: 40%;
-  width: fit-content;
+  width: 70%;
+  overflow-y: auto;
+  border-bottom: 5px solid #204229;
+  color: #d8f0df;
 }
 .education {
-  background-color: blue;
-  height: 20%;
+  height: 25%;
+  width: 70%;
+  overflow-y: auto;
+  border-bottom: 5px solid #204229;
+  color: #d8f0df;
 }
 .skills {
-  background-color: white;
-  height: 40%;
+  height: 45%;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: #d8f0df;
+  border-bottom: solid 5px #204229;
+}
+.first,
+.second {
+  display: flex;
+  padding: 15px;
+}
+.skills div {
+  text-shadow: 4.2px 4.2px 3.4px #3b423d;
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding-right: 12px;
 }
 @keyframes fadebackground {
   from {
@@ -130,5 +164,70 @@ a:hover {
   }
   to {
     background-color: #437a52;
+  }
+}
+@media (max-width: 376px) {
+  .profile,
+  .contact,
+  .skills {
+    overflow-y: auto;
+  }
+  .profile,
+  .contact,
+  .skills {
+    border-bottom: transparent;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .first,
+  .second {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 770px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+
+  .first,
+  .second {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    height: 50%;
+  }
+  .first,
+  .second {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile {
+    height: 45%;
+  }
+}
+@media (min-width: 1600px) {
+  .skills {
+    height: 30%;
+  }
+  .education {
+    height: 40%;
+    overflow-y: none;
+  }
+  .profile {
+    height: 25%;
   }
 }
