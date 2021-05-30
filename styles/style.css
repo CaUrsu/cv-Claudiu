@@ -23,6 +23,7 @@ a:visited {
 }
 a:hover {
   color: rgba(41, 53, 46, 0.56);
+  cursor: pointer;
 }
 
 .header {
@@ -67,6 +68,7 @@ a:hover {
   width: 80vw;
   align-items: center;
   margin: 0 auto;
+  justify-content: space-around;
 }
 
 .left_side {
@@ -98,10 +100,30 @@ a:hover {
   line-height: 1.8;
   border-bottom: solid 5px #204229;
 }
-.right.side {
+.right_side {
   width: 70%;
+  height: 85vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
 }
-
+.experience {
+  background-color: red;
+  height: 40%;
+  width: fit-content;
+}
+.education {
+  background-color: blue;
+  height: 20%;
+}
+.skills {
+  background-color: white;
+  height: 40%;
+}
 @keyframes fadebackground {
   from {
     background-color: #204229;
